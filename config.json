@@ -1,28 +1,19 @@
 {
     "project": {
-        "name": "mybgg",  // This is the name of your project. You can leave it as it is.
-        "title": "rcampos"  // This is the page title. If you leave this empty, a title will be
-                     // created from your BGG username.
+        "name": "mybgg",  
+        "title": "rcampos"
     },
     "boardgamegeek": {
-        "user_name": "rdplcampos",  // The username on boardgamegeek that has your games
+        "user_name": "rdplcampos",
         "extra_params": {
-            "own": 1  // Here's the query that will be sent to BGG to get your games. A full list
-                      // of options can be found here:
-                      // https://lcosmin.github.io/boardgamegeek/modules.html#boardgamegeek.api.BGGClient.collection
+            "own": 1
         }
     },
     "algolia": {
-        "app_id": "AEE5JCQ9DG",  // Your Algolia APP ID. When logged in, look at the top of the
-                                  // page which says: APPS > YOUR_ID_HERE
-        "api_key_search_only": "c53c4d3cc73ba02a7c0376a962c57f74",  // Click "API Keys" in the menu to the left.
-                                                       // Use the "Search-Only API Key"!
-        "index_name": "BoardGame",  // All your games will be stored in something called an "index".
-                                          // You can create and index by going to "Indices" in the menu to the left.
-                                          // Click to create a new index, and give it a name. Put the name you choose here.
-        "hits_per_page": 50,  // Number of games you want to show on each page
-        "sort_by": "asc(name)"  // Default sort order before the user has searched for anything.
-                                // Can be one of: asc(rank), desc(rating), desc(numrated), desc(numowned)
-                                // "asc" stands for ascending, meaning lowest number first, desc the opposite
+        "app_id": "AEE5JCQ9DG",
+        "api_key_search_only": "c53c4d3cc73ba02a7c0376a962c57f74",
+        "index_name": "BoardGame",
+        "hits_per_page": 50,
+        "sort_by": "asc(name)"
     }
 }
